@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8">
+    <title>chopper/list - list</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="nico 0.4.4" />
+    <link type="image/x-icon" href="./static/css/favicon.ico" rel="icon">
+    <link rel="stylesheet" href="./static/css/normalize.css" />
+    <link rel="stylesheet" href="./static/css/site.css" />
+    <link rel="stylesheet" href="./static/css/solarized.css" />
+
+<script src="http://assets.spmjs.org/??
+seajs/seajs/2.1.1/sea.js,
+seajs/seajs-combo/1.0.0/seajs-combo.js,
+seajs/seajs-debug/1.0.0/seajs-debug.js,
+seajs/seajs-style/1.0.0/seajs-style.js,
+seajs/seajs-health/0.1.0/seajs-health.js,
+jquery/jquery/1.7.2/jquery.js"></script>
+<script>
+  (function() {
+
+  var query = location.search;
+  var srcdir = 'src';
+  if (query.indexOf('dist') > 0) {
+    srcdir = 'dist';
+  } else if (query.indexOf('cov') > 0) {
+    srcdir = 'src-cov';
+  }
+
+  seajs.config({
+    alias: {
+      "$": 'jquery/jquery/1.7.2/jquery',
+      "jquery": 'jquery/jquery/1.7.2/jquery',
+      "jquery-debug": 'jquery/jquery/1.7.2/jquery-debug',
+      "mocha": "gallery/mocha/1.9.0/mocha",
+      "expect": "gallery/expect/0.2.0/expect",
+      "sinon": "gallery/sinon/1.6.0/sinon"
+    },
+    map: [function(uri) {
+      var m = uri.match(/chopper\/list\/1.0.0\/(.*)/);
+      if (m) {
+        return resolve(m[1]);
+      }
+      return uri;
+    }],
+    comboExcludes: {test: function(uri) {
+      return !/\/\/assets\.spmjs\.org/.test(uri);
+    }}
+  });
+
+  function resolve(file) {
+    if (query.indexOf('debug') > 0) {
+      if (file.indexOf('-debug') === -1) {
+        file = file.replace(/\.(\w+)$/, '-debug.$1');
+      }
+    }
+    return seajs.resolve(".//" + srcdir + "/" + file);
+  }
+    seajs.config({ alias: {}});
+
+    seajs.config({alias: {
+      "$-debug": 'jquery/jquery/1.7.2/jquery-debug'
+      , "list": resolve("list.css")
+    }});
+
+    // 加载依赖的 css 文件
+    var cssArray = [];
+    for (var i=0; i<cssArray.length; i++) {
+      if (cssArray[i].indexOf('.css') < 0) {
+        cssArray.splice(i, 1);
+      }
+    }
+    seajs.use(cssArray);
+  })();
+</script>
+    <script src="./static/js/site.js"></script>
+    <!--[if lt IE 9]>
+    <script src="./static/js/html5shiv.js"></script>
+    <![endif]-->
+    
+  </head>
+  <body>
+    <div id="body-wrapper">
+      <aside id="sidebar-wrapper">
+        <h1><a href="./">List</a><sup class="package-root"><a href="/">chopper</a></sup></h1>
+        <p class="version">当前版本：<a title="历史记录" href="history.html">1.0.0</a></p>
+        <p class="description"></p>
+        <p class="keywords" style="display: none;"></p>
+        <a class="source" href="https://github.com/chopper-UI/list.git" target="_blank">View the Project</a>
+<ul id="module-output">
+  <li class="module-multiable" title="本组件共有1个子模块">文件</li>
+    <li><a data-file="list.css" href="dist/list.css">■</a></li>
+</ul>
+<div id="output-card">
+    <h3>chopper/list/1.0.0/<a target="_blank" id="output-file"></a></h3>
+    <p>这是模块的输出文件，请 require 或 link 来加载此文件。</p>
+</div>
+
+      </aside>
+      <div id="content-wrapper">
+        <div id="content">
+<article class="hentry">
+  <h1 class="entry-title">list</h1>
+  <div class="entry-content">
+    <p>// description</p>
+<hr>
+<h2 id="演示">演示<a href="#演示" class="anchor">¶</a></h2><link type="text/css" rel="stylesheet" media="screen" href="src/list.css">
+
+<h3 id="默认">默认<a href="#默认" class="anchor">¶</a></h3><div class="nico-insert-code"><div class="ui-list-block">
+    <div class="ui-list-block-item" style="padding: 20px;">
+        Test Content
+    </div>
+    <div class="ui-list-block-item" style="padding: 20px;">
+        Test Content
+    </div>
+</div></div><div class="highlight"><pre><code class="xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-list-block"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-list-block-item"</span> <span class="attribute">style</span>=<span class="value">"padding: 20px;"</span>&gt;</span>
+        Test Content
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-list-block-item"</span> <span class="attribute">style</span>=<span class="value">"padding: 20px;"</span>&gt;</span>
+        Test Content
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre></div>
+  </div>
+</article>
+</div>
+      </div>
+      
+    </div>
+    <div id="footer-wrapper">
+      <footer>
+        <p class="powered"><a href="https://github.com/spmjs/spm2">spm</a> •
+<a href="http://lab.lepture.com/nico/">nico</a>
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

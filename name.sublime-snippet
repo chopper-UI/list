@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+
+]]></content>
+    <tabTrigger>chopper-ui-list</tabTrigger>
+    <description>chopper list</description>
+    <!-- <scope>source.python</scope> -->
+</snippet>
