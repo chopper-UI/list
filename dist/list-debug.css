@@ -1,0 +1,17 @@
+/*! define chopper/list/1.0.0/list-debug.css */
+.ui-list-block{
+
+}
+.ui-list-block .ui-list-block-item{
+    background-color: #fff;
+    box-shadow:0 4px 6px #b3b5b6;
+    -webkit-box-shadow:0 4px 6px #b3b5b6;
+    -khtml-box-shadow:0 4px 6px #b3b5b6;
+    -moz-box-shadow:0 4px 6px #b3b5b6;
+    border: 1px solid #cfcece;
+    margin-bottom: 12px;
+}
+.ui-list-block .ui-list-block-item:last-child{
+    border-bottom: 0 none;
+    margin-bottom: 0;
+}
