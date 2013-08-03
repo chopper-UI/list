@@ -1,0 +1,9 @@
+.ex-padding{
+    padding: 20px;
+}
+.ex-box{
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    padding-top: 10px;
+}

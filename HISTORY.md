@@ -6,4 +6,6 @@
 
 `tag:new` 新组件。
 
-![截个图放这里]()
+## 1.0.1
+
+`tag:improved` 新建：`ui-list-vertical`，可生成竖列水平若干份等分的列表

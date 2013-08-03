@@ -17,6 +17,9 @@ publish-doc: clean build-doc
 
 clean:
 	@rm -fr _site
+	
+build:
+	@spm build
 
 
 reporter = spec

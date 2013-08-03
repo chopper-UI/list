@@ -14,3 +14,60 @@
     border-bottom: 0 none;
     margin-bottom: 0;
 }
+
+
+
+/**! block ui-list-vertical **/
+.ui-list-vertical-item{
+    float: left;
+    min-height: 1px;
+    margin-bottom: 10px;
+
+    width: 39px;
+    margin-left: 10px;
+}
+.ui-list-vertical-item img{
+    width: 100%;
+    vertical-align: middle;
+
+    height: 37px;
+}
+.ui-list-vertical-border{
+    display: block;
+    border: 1px solid #CCC;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    -moz-border-radius: 3px;
+    text-align: center;
+}
+
+[class*="ui-list-vertical-wrap"]:after{
+    content: '\0020';
+    display: block;
+    visibility: hidden;
+    height: 0;
+    clear: both;
+}
+[class*="ui-list-vertical-wrap"]{
+    padding-right: 2%;
+}
+[class*="ui-list-vertical-wrap"] .ui-list-vertical-item{
+    margin-left: 2%;
+}
+[class*="ui-list-vertical-wrap"] .ui-list-vertical-item img{
+    height: auto;
+}
+.ui-list-vertical-wrap-4 .ui-list-vertical-item{
+    width: 23%;
+}
+.ui-list-vertical-wrap-5 .ui-list-vertical-item{
+    width: 18%;
+}
+.ui-list-vertical-wrap-8 .ui-list-vertical-item{
+    width: 10.5%;
+}
+.ui-list-vertical-wrap-10 .ui-list-vertical-item{
+    width: 8%;
+}
+/**! endblock ui-list-vertical **/

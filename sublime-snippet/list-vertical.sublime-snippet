@@ -1,0 +1,14 @@
+<snippet>
+    <content><![CDATA[
+<div class="ui-list-vertical-wrap-{$1}">
+    <div class="ui-list-vertical-item">
+        <a class="ui-list-vertical-border" href="" title="">
+            <img src="{$2}" alt="">
+        </a>
+    </div>
+</div>
+]]></content>
+    <tabTrigger>chopper-ui-list-vertical</tabTrigger>
+    <description>chopper list vertical</description>
+    <!-- <scope>source.python</scope> -->
+</snippet>
