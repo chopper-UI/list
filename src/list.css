@@ -3,9 +3,8 @@
 }
 .ui-list-block .ui-list-block-item{
     background-color: #fff;
-    box-shadow:0 4px 6px #b3b5b6;
-    -webkit-box-shadow:0 4px 6px #b3b5b6;
-    -moz-box-shadow:0 4px 6px #b3b5b6;
+    box-shadow:0 4px 6px 0 #b3b5b6;
+    -webkit-box-shadow:0 4px 6px 0 #b3b5b6;
     border: 1px solid #cfcece;
     margin-bottom: 12px;
 }
