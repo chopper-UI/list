@@ -1,6 +1,6 @@
 {
   "name": "list",
-  "description": "",
+  "description": "列表组件",
   "version": "1.0.1",
   "homepage": "https://github.com/chopper-UI/list",
   "repository": {
